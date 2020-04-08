@@ -21,10 +21,9 @@ var $dlgFont = (function() {
             + '<div class="script">'
               + '<label>'
                 + '脚本(R):<br>'
-                + '<select>'  
-                  + '<option value="西欧语言">西欧语言</option>'                
+                + '<select>'                                  
                   + '<option value="中文 GB2312">中文 GB2312</option>' 
-                   
+                  + '<option value="西欧语言">西欧语言</option>'  
                 + '</select>'
               + '</label>'
             + '</div>'
