@@ -29,13 +29,6 @@ module.exports = function (grunt) {
         dest: 'dist/index.html'
       }
     },
-    imagemin: {
-      files: {
-        expand: true,
-        src: ['./images/*.png'],
-        dest: 'dist/'
-      }
-    },
     copy: {
       html: {
         src: './index.html',
@@ -86,5 +79,5 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-usemin');
 
   grunt.registerTask('lint', ['htmlhint', 'csslint', 'eslint']);
-  grunt.registerTask('release', ['copy', 'useminPrepare', 'concat', 'uglify', 'cssmin', 'usemin', 'htmlmin', 'imagemin', 'clean:end']);
+  grunt.registerTask('release', ['copy', 'concat', 'uglify', 'cssmin', 'usemin', 'htmlmin', 'clean:end']);
 };
